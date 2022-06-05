@@ -1,0 +1,100 @@
+body{
+    background-color: gray;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+#Red{
+    color: red;
+}
+
+#Green {
+    color: green;
+}
+.middle{
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+
+.trafficLight {
+    margin: 0 auto;
+    background-color: black;
+    width: 50px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px;
+    border-radius: 10px;
+}
+
+.trafficLight span {
+    margin: 0 auto;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    background-color: gray;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* animation: red 5s linear infinite */
+    /* animation-fill-mode: forwards; */
+}
+
+.red {
+    animation-name: red;
+}
+    
+.yellow {
+    animation-name: yellow;
+}
+    
+.green {
+    animation-name: green;
+}
+
+@keyframes red {
+    0%,
+    33% {
+        background-color: red;
+    }
+    34%,
+    100% {
+        background-color: gray;
+    }
+}
+
+@keyframes yellow {
+    0%,
+    33% {
+        background-color: gray;
+    }
+    34%,
+    66% {
+        background-color: yellow;
+    }
+    67%,
+    100% {
+        background-color: gray;
+    }
+}
+
+@keyframes green {
+    0%,
+    66% {
+        background-color: gray;
+    }
+    67%,
+    100% {
+        background-color: green;
+    }
+}
