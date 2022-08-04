@@ -71,6 +71,18 @@ ol.instruct{
     animation-name: green;
 }
 
+.button {
+   text-align: center; 
+   background-color: black ;
+   color: white;
+   display: inline-block;
+   margin: 4px 2px;
+   cursor: pointer;
+   padding: 15px 32px;
+   font-size: large;
+   
+}
+
 @keyframes red {
     0%,
     33% {
