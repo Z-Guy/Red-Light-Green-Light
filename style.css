@@ -10,6 +10,15 @@ p {
     text-align: center;
 }
 
+div.container{
+    text-align: center;
+}
+
+ol.instruct{
+    display: inline-block;
+    text-align: left
+}
+
 #Red{
     color: red;
 }
